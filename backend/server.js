@@ -22,9 +22,7 @@ app.post('/register', (req, res) => {
 	if (!name || !password) {
 		return res.json({error: "Please fill all fields"});
 	}
-	const existingUser = db.users.find(
-		u => u.name === name
-	);
+	const existingUser = db.users.find(u => u.name === name);
 	if (existingUser) {
 		return res.json({error: "User already exists"});
 	}
@@ -40,11 +38,7 @@ app.post('/register', (req, res) => {
 
 app.post('/login', (req, res) => {
 	const { name, password } = req.body;
-	const user = db.users.find(
-		u =>
-		u.name === name &&
-		u.password === password
-	);
+	const user = db.users.find(u => u.name === name && u.password === password);
 	if (!user) {
 		return res.json({error: "Wrong login"});
 	}
