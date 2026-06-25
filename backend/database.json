@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "la",
+      "password": "al"
+    },
+    {
+      "id": 2,
+      "name": "lo",
+      "password": "al"
+    }
+  ],
+  "fundings": [
+    {
+      "id": 1,
+      "title": "a",
+      "description": "a",
+      "price": 1,
+      "userId": 1
+    }
+  ]
+}
