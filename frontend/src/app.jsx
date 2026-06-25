@@ -20,20 +20,16 @@ function Login(){
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({name,password})
       });
-
       const data=await res.json();
-
       if(data.error){
         alert(data.error);
         return;
       }
-
       if(data.user){
         localStorage.setItem("user",JSON.stringify(data.user));
         navigate("/fundings");
         return;
       }
-
       alert("Login failed");
     }catch(error){
       console.error(error);
@@ -47,24 +43,19 @@ function Login(){
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify({name,password})
     });
-
     const data=await res.json();
-
     if(data.error){
       alert(data.error);
       return;
     }
-
     alert("Compte créé");
   }
 
   return(
     <div>
       <h1>Login</h1>
-
       <input placeholder="name" onChange={e=>setName(e.target.value)}/>
       <input type="password" placeholder="password" onChange={e=>setPassword(e.target.value)}/>
-
       <button onClick={register}>Register</button>
       <button onClick={login}>Login</button>
     </div>
