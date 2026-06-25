@@ -12,12 +12,5 @@
     }
   ],
   "fundings": [
-    {
-      "id": 1,
-      "title": "a",
-      "description": "a",
-      "price": 1,
-      "userId": 1
-    }
-  ]
+]
 }
