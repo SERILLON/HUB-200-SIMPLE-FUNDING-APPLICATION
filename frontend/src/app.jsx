@@ -1,7 +1,7 @@
 import {useEffect,useState} from "react";
 import {BrowserRouter,Routes,Route,useNavigate} from "react-router-dom";
 
-const API = import.meta.env.VITE_API_URL || "/api";
+const API = "/api";
 
 function Login(){
   const [name,setName]=useState("");

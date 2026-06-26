@@ -9,7 +9,20 @@
       "id": 2,
       "name": "lo",
       "password": "al"
+    },
+    {
+      "id": 3,
+      "name": "ooo",
+      "password": "al"
     }
   ],
-  "fundings": []
+  "fundings": [
+    {
+      "id": 1,
+      "title": "bkjbh",
+      "description": "jvvv",
+      "price": 2,
+      "userId": 3
+    }
+  ]
 }
